@@ -82,7 +82,7 @@ importers:
       ufo: ^1.0.1
       unbuild: ^1.1.1
       unenv: ^1.0.1
-      unimport: ^1.3.0
+      unimport: ^2.0.0
       unstorage: ^1.0.1
       vitest: ^0.28.1
     dependencies:
@@ -142,7 +142,7 @@ importers:
       std-env: 3.3.1
       ufo: 1.0.1
       unenv: 1.0.1
-      unimport: 1.3.0_rollup@3.10.1
+      unimport: 2.0.0_rollup@3.10.1
       unstorage: 1.0.1
     devDependencies:
       '@types/aws-lambda': 8.10.109
@@ -1601,6 +1601,12 @@ packages:
     resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==}
     engines: {node: '>=0.4.0'}
     dev: true
+
+  /acorn/8.8.1:
+    resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
+    engines: {node: '>=0.4.0'}
+    hasBin: true
+    dev: false
 
   /acorn/8.8.2:
     resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
@@ -5146,8 +5152,8 @@ packages:
       pathe: 1.1.0
     dev: false
 
-  /unimport/1.3.0_rollup@3.10.1:
-    resolution: {integrity: sha512-fOkrdxglsHd428yegH0wPH/6IfaSdDeMXtdRGn6en/ccyzc2aaoxiUTMrJyc6Bu+xoa18RJRPMfLUHEzjz8atw==}
+  /unimport/2.0.0_rollup@3.10.1:
+    resolution: {integrity: sha512-THRpoyIMY21cokBqG+txTWqJtvkztit0US4cpbhq43F2gpeW75eijr1wpOuWC9J0KfcK8drtKmGa1P8FCvj+6w==}
     dependencies:
       '@rollup/pluginutils': 5.0.2_rollup@3.10.1
       escape-string-regexp: 5.0.0
@@ -5171,7 +5177,7 @@ packages:
   /unplugin/1.0.1:
     resolution: {integrity: sha512-aqrHaVBWW1JVKBHmGo33T5TxeL0qWzfvjWokObHA9bYmN7eNDkwOxmLjhioHl9878qDFMAaT51XNroRyuz7WxA==}
     dependencies:
-      acorn: 8.8.2
+      acorn: 8.8.1
       chokidar: 3.5.3
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.5.0
